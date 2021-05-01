@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="icon" href="/img/weather.jpg">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main">
+        {{>header}}
+        <form>
+            <input type="text" placeholder="Location">
+            <button>Search</button>
+        </form>
+        <img class="im" src="/img/weather1.jpg"><br>
+        <h3>Weather Report</h3>
+        </p><p id="message" style="color:darkgreen"></p> 
+    </div>
+    {{>footer}}
+    <script src="/js/app.js">
+</script>
+</body>
+</html>
