@@ -15,7 +15,7 @@ weathersearch.addEventListener('submit',(e)=>{
         }
         else{
             msg.textContent="It is "+data.weather+" and "+data.temperature+" out"+" but feels like "+data.feelslike
-            ext.textContent="wind_speed "+data.wind_speed+" and there is a chance of "+data.precip+"% Rain"+" will that be a good day "+data.is_day
+            ext.textContent="windspeed "+data.wind_speed+" and there is a chance of "+data.precip+"% Rain"+" will that be a good day "+data.is_day
         }
         })
     })
