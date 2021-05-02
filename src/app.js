@@ -41,7 +41,10 @@ app.get('/weather',(req,res)=>{
                 feelslike:fsdata[2]+" degrees",
                 latitude:data[1],
                 logitude:data[0],
-                location:data[2]
+                location:data[2],
+                wind_speed:fsdata[3],
+                precip:fsdata[4],
+                is_day:fsdata[5]
 
             })
         })
