@@ -35,6 +35,7 @@ app.get('/weather',(req,res)=>{
         }
         getloc.getloc(data[1],data[0],(error,fsdata)=>{
             if(error){return res.send({error:error})}
+            console.log(data[3])
             res.send({
                 weather:fsdata[0],
                 temperature:fsdata[1]+" degrees",
@@ -44,7 +45,8 @@ app.get('/weather',(req,res)=>{
                 location:data[2],
                 wind_speed:fsdata[3],
                 precip:fsdata[4],
-                is_day:fsdata[5]
+                is_day:fsdata[5],
+                similar_search:data[3]
 
             })
         })

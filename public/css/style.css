@@ -41,6 +41,9 @@ header a{
 .im{
     width:250px;
 }
+.rv{
+    color:rgb(0, 255, 191)
+}
 
 input{
     border:1px solid #cccccc;
