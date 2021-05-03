@@ -4,7 +4,6 @@ const rq=require("request")
 const getloc=(dt1,dt2,callback)=>{
     const url='http://api.weatherstack.com/current?access_key=1bb2e327183f343a0ab223f0a39a836c&query='+dt1+","+dt2+'&units=m'
     rq({url:url,json:true},(error,res)=>{
-        console.log(res)
         if(error){
             callback("cannot get the weather information")
         }
